@@ -19,10 +19,10 @@ body {
   background: var(--LightGrayishBlue1);
 }
 main {
-  width: 55%;
+  width: 58%;
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 p {
   color: var(--DarkGrayishBlue);
@@ -31,6 +31,7 @@ p {
 .noti-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .noti {
   display: flex;
@@ -56,21 +57,36 @@ p {
   margin: 0;
 }
 
+.all-noti p:hover {
+  color: var(--PriBlue);
+  cursor: pointer;
+}
 .avatar-img,
 .chess-img {
-  margin: 1.25rem;
+  margin: 1rem;
   height: 4rem;
   width: auto;
+}
+.chess-img {
+  border: 2px solid white;
+}
+.chess-img:hover {
+  cursor: pointer;
+  border: 2px solid var(--LightGrayishBlue2);
+  height: 3.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 .unread-noti,
 .read-noti {
   display: flex;
-  margin: 10px 0;
+  margin: 10px;
+  padding: 0 3px;
   border-radius: 10px;
   align-items: center;
 }
 .unread-noti {
-  background-color: var(--LightGrayishBlue1);
+  background-color: var(--VeryLightGrayishBlue);
 }
 
 .containers p {
@@ -80,6 +96,18 @@ p {
   color: var(--VeryDarkBlue);
   font-weight: 700;
   padding-right: 3px;
+}
+.name:hover {
+  color: var(--PriBlue);
+  cursor: pointer;
+}
+.activity:hover {
+  color: var(--PriBlue);
+  cursor: pointer;
+}
+.club:hover {
+  color: var(--PriBlue);
+  cursor: pointer;
 }
 .time {
   color: var(--GrayishBlue);
@@ -101,6 +129,10 @@ p {
   color: var(--DarkGrayishBlue);
   margin: 0;
 }
+.messaged:hover {
+  background-color: var(--LightGrayishBlue1);
+  transition: 0.5s;
+}
 .special {
   display: flex;
   justify-content: space-between;
@@ -118,4 +150,47 @@ p {
 }
 .club {
   color: var(--PriBlue);
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--PriRed);
+  margin: 0 3px;
+}
+@media only screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .avatar-img,
+  .chess-img {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    height: 3.5rem;
+    width: auto;
+  }
+  .chess-img {
+    margin-right: 0;
+  }
+  .noti-nav,
+  .unread-noti,
+  .read-noti {
+    margin: 0px 20px;
+  }
+  .unread-noti,
+  .read-noti {
+    margin: 10px 0;
+    padding: 0 3px;
+    border-radius: 10px;
+  }
+  .read-noti {
+    margin: 20px 0;
+  }
+  .special-noti {
+    margin-bottom: 0;
+  }
+  .messaged {
+    margin-right: 0;
+    margin-left: 5.5rem;
+  }
 }
