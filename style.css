@@ -17,6 +17,7 @@ body {
   display: grid;
   place-items: center;
   background: var(--LightGrayishBlue1);
+  margin: 10vh 0;
 }
 main {
   width: 58%;
