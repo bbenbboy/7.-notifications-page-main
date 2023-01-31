@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/bbenbboy/7.-notifications-page-main.git)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://7-notifications-page-main.vercel.app/)
 
 ## My process
 
