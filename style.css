@@ -1,0 +1,121 @@
+:root {
+  --PriRed: hsl(1, 90%, 64%);
+  --PriBlue: hsl(219, 85%, 26%);
+  --White: white;
+  --VeryLightGrayishBlue: hsl(210, 60%, 98%);
+  --LightGrayishBlue1: hsl(211, 68%, 94%);
+  --LightGrayishBlue2: hsl(205, 33%, 90%);
+  --GrayishBlue: hsl(219, 14%, 63%);
+  --DarkGrayishBlue: hsl(219, 12%, 42%);
+  --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+body {
+  display: grid;
+  place-items: center;
+  background: var(--LightGrayishBlue1);
+}
+main {
+  width: 55%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+p {
+  color: var(--DarkGrayishBlue);
+  line-height: 21px;
+}
+.noti-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.noti {
+  display: flex;
+  align-items: center;
+}
+.noti h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.noti-num {
+  display: flex;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  color: white;
+  background-color: var(--PriBlue);
+  height: 30px;
+  width: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.noti-num h2 {
+  margin: 0;
+}
+
+.avatar-img,
+.chess-img {
+  margin: 1.25rem;
+  height: 4rem;
+  width: auto;
+}
+.unread-noti,
+.read-noti {
+  display: flex;
+  margin: 10px 0;
+  border-radius: 10px;
+  align-items: center;
+}
+.unread-noti {
+  background-color: var(--LightGrayishBlue1);
+}
+
+.containers p {
+  margin: 5px 0;
+}
+.name {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+  padding-right: 3px;
+}
+.time {
+  color: var(--GrayishBlue);
+}
+.containers {
+  display: flex;
+  align-items: center;
+}
+.special-noti {
+  margin-bottom: 0;
+}
+.messaged {
+  margin: 0 10px 0 6.5rem;
+}
+.messaged p {
+  border: 1px solid var(--LightGrayishBlue2);
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--DarkGrayishBlue);
+  margin: 0;
+}
+.special {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.activity,
+.club {
+  font-weight: 700;
+  padding: 0 3px;
+}
+.activity {
+  color: var(--DarkGrayishBlue);
+}
+.club {
+  color: var(--PriBlue);
+}
